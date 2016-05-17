@@ -1,0 +1,11 @@
+
+<hr/>
+<h2>
+<%= "Welcome " + @person.first_name.capitalize + " " + @person.last_name.capitalize  %></h2>
+<br>
+<h4><%= "Based on your birthday: " + @person.birthdate.strftime("%m%d%Y").to_s %><br>
+  <%="Your numerology number is " + @birth_date_number.to_s %></h4>
+
+  <div class="well">
+    <p><%= @message %></p>
+  </div>
