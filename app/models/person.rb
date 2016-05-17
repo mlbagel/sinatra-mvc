@@ -39,18 +39,11 @@ class Person < ActiveRecord::Base
   end
   end
 
-  def self.setup_index_view
-    birth_date = params[:birthdate]
-    @birth_date_number = Person.get_number(birth_date)
-    @message = Person.my_message(@birth_date_number)
-    erb :index
-  end
-
   def self.valid_birthdate(input)
-      if (input.length == 8) && (input.match(/^[0-9]+[0-9]$/))
+      if (input.length == 8 && !input.match(/^[0-9]+[0-9]$/).nil?)
         true
       else
-        return false
+        false
       end
   end
 end
