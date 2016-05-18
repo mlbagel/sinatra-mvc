@@ -26,10 +26,13 @@ birth_date = params[:birthdate].gsub("-", "")
      @birth_date_number = Person.get_number(birth_date)
      redirect "/message/#{@birth_date_number}"
    else
-     @error = "The birthdate you entered is incorrect. Please enter MMDDYYYY."
+     @error = "The birthdate you entered is incorrect. You should enter a valid birthdate in the form of mmddyyyy."
      erb :form
    end
  end
+
+ 
+
 
 
 # post '/' do

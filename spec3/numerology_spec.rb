@@ -17,7 +17,7 @@ describe 'Our Numerology App' do
   it "has message in a paragraph" do
     get '/01012000'
     expect(last_response.body).to include("<p>Your numerology number is")
-  end    
+  end
 
   it 'responds to a get request to message/:birth_path_num' do
     get '/message/7'
@@ -25,7 +25,7 @@ describe 'Our Numerology App' do
   end
 
   it "responds to a post to / with a redirect" do
-    # This test just checks that a post request is 
+    # This test just checks that a post request is
     # accepted with a birthdate parameter
     post("/", { birthdate: '09031994' })
     expect(last_response.redirect?).to eq(true)
@@ -59,7 +59,6 @@ describe 'Our Numerology App' do
     birthdate = '12axy3jk'
     post("/", { birthdate: birthdate })
     expect(last_response).to match(/#{'You should enter a valid birthdate in the form of mmddyyyy.'}/)
-  end  
-    
-end
+  end
 
+end

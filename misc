@@ -1,2 +1,9 @@
 
 <li><%= "#{person.first_name}, #{person.last_name}, #{person.birthdate}" %></li>
+
+
+delete '/people/:id' do
+  person = Person.find(params[:id])
+  person.destroy
+  redirect "/people"
+end

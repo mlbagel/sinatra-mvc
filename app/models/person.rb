@@ -1,5 +1,7 @@
 class Person < ActiveRecord::Base
 
+  validates_presence_of :birthdate, :first_name, :last_name
+
   def self.get_number(birth_date)
   birth_number = birth_date[0].to_i + birth_date[1].to_i + birth_date[2].to_i + birth_date[3].to_i + birth_date[4].to_i + birth_date[5].to_i + birth_date[6].to_i + birth_date[7].to_i
 
