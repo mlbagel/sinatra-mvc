@@ -1,20 +1,31 @@
 <!doctype html>
-<head>
-  <meta charset="utf-8">
-  <title>Numerology App</title>
-  <link rel="stylesheet" href="/css/people.css" >
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Numerology App</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <h1>Numerology Calculator <small>A Skillcrush Project</small></h1>
+    <!-- FontAwesome CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+      <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="/style.css" >
+
+  </head>
+  <body class="create">
+    <div class="container">
+      <div class="header">
+        <h1>Numerology Calculator <small>A Skillcrush Project</small></h1>
+      </div>
+      <hr />
+
+      <%= yield %>
+      <hr />
+      <p>Copyright - 2016</p>
     </div>
-    <hr />
-
-    <%= yield %>
-    <hr />
-    <p>Copyright - 2016</p>
-  </div>
-</body>
+  </body>
 </html>

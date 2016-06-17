@@ -1,0 +1,23 @@
+body {background:url('/images/white.GiF');
+width: 100%;
+background-repeat: no-repeat;
+background-position: top center;
+}
+
+hr {width: 880px;
+color: blue;
+background-color: blue;
+}
+
+.transpbox {
+  margin: 0px;
+  background-color: #ffffff;
+  opacity: 0.8;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+.transpbox p {
+  margin: 5% 5% 5% 0%;
+  font-weight: bold;
+  color: #000000;
+}

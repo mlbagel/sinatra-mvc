@@ -7,3 +7,45 @@ delete '/people/:id' do
   person.destroy
   redirect "/people"
 end
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+
+
+
+<form role="form" action="/words" method="post">
+
+
+if Word.find_by_text(input).present? && self.
+  true
+else
+   raise Exception.new("Your word is not in our Dictionary.  Please select Add Word  to add this as a new word.")
+end
+
+=begin
+<div class="btn-group">
+<div class="row">
+  <div class="col-md-6 col-lg-4">
+    <h2>Heading</h2>
+    <p class="text-danger">New Words</p>
+    <p><a class="btn btn-primary" href="/words/new" role="button">New Words &raquo;</a></p>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <h2>Heading</h2>
+    <p>See our Dictionary</p>
+    <p><a class="btn btn-primary" href="/words" role="button">View details &raquo;</a></p>
+ </div>
+  <div class="col-md-12 col-lg-4">
+    <h2>Heading</h2>
+    <p>Create another Anagram</p>
+    <p><a class="btn btn-primary" href="/" role="button">Home &raquo;</a></p>
+  </div>
+</div>
+</div>
+=end
+<div class="col-md-6 col-md-offset-2">
+
+
+
+
++ @birth_date.strftime("%m%d%Y").to_s %>
